@@ -16,16 +16,27 @@
 
         header {
             text-align: center;
-            background-color: yellow;
+            font-family: "Tangerine", cursive;
             width: 100%;
             margin: 0;
             padding: 0;
             height: auto;
             border-radius: 15px;
+            font-weight: bold;
+            font-size: 2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            position: relative;
+            font-size: 2.5rem;
+            bottom: 20px;
+            margin-bottom: 0;
         }
 
         main {
             margin: 10px;
+            margin-top: 0;
             padding: 5px;
             background-color: rgba(30, 30, 30, 12%);
             backdrop-filter: blur(10px);
@@ -208,12 +219,12 @@
             font-size: 18px;
         }
 
-         @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .diagram-history-container {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         @media (max-width: 600px) {
             .footer-content {
                 flex-direction: column;
@@ -263,6 +274,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <meta property="og:title" content="Habit Tracker Ramadhan" />
     <meta property="og:description"
         content="lacak daily quest anda selama bulan suci Ramadhan dan buat bulan suci anda lebih menarik dari sebelumnya" />
@@ -301,7 +315,7 @@
         <form id="form-pengalaman" style="display: inline-block; text-align: left;">
             <input type="file" id="foto-pengalaman" accept="image/*" style="display: block; margin-bottom: 10px;">
             <textarea id="teks-pengalaman" placeholder="Tulis pengalaman Anda..."
-                style="width: 300px; height: 100px; display: block; margin-bottom: 10px;"></textarea>
+                style="width: 200%; height: 100px; display: block; margin-bottom: 10px; font-size: 1rem; color: black;"></textarea>
             <button type="submit"
                 style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 15px;">Kirim</button>
             <button type="button" id="batal-unggah"
